@@ -1,0 +1,76 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    color: #484848;
+}
+body{
+    padding: 5px 50px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding-right: 50px;
+}
+.nav-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nav-bar h1{
+    padding-left: 15px;
+    color: rgb(5, 142, 11);
+}
+#nav-list{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.nav-list-item a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.image-section{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.contact-form{
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 40%;
+    padding: 25px 30px;
+    text-align: center;
+    margin: auto;
+}
+.contact-form h2{
+    font-size: 1.7rem;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+}
+.contact-form label{
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.contact-form input, textarea, select{
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.contact-form button{
+    background-color: green;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+}
