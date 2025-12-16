@@ -258,7 +258,62 @@
             <li>Multi-tasking</li>
         </ol>
     </div>
-     
+
+    <form action="" class="form-2">
+        <fieldset>
+            <legend>All Details</legend>
+            File : <input type="file" autofocus><br>
+
+            Image : <input type="image"><br>
+
+            Checkbox : <input type="checkbox">Cricket <input type="checkbox">Football
+            <input type="checkbox">Volley Ball
+            <input type="checkbox">Badminton
+
+            Radio Button : <input type="radio">Male <input type="radio">Female <br>
+
+            Color : <input type="color"><br>
+
+            Date : <input type="date" min="16-12-2025"><br>
+
+            Time : <input type="time" name="" id="">
+
+            Range : <input type="range" min="0" max="50"><br>
+
+            Address : <input type="text" readonly placeholder="You can't write here"><br>
+
+            Search : <input type="search" name="" id="">
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+
+        </fieldset>
+
+    </form>
+
+    <div class="list-of-navs">
+        <a href="grid.html">Grid</a>
+        <a href="layout.html">Layout</a>
+        <a href="#">Home</a>
+    </div>
+
+    <!-- Canvas -->
+    <canvas width="200px" height="100px" style="border: 1px solid black; margin: 10px 0px;" ></canvas>
+
+    <!-- SVG -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke-width="5" stroke="green" fill="yellow">
+    </svg>
+    <svg width="400" height="120">
+        <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+        Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <!-- Geolocation -->
+    Location : 
+    <button onclick="getLocation()">Get Your Location</button>
+    <p id="location"></p>
 
     <address>
         Written by Harshita Salvi.<br>
@@ -267,6 +322,25 @@
         Box 564, Disneyland<br>
         USA
     </address>
-    
+    <script>
+        let position = document.getElementById("location");
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            }
+            else{
+                location.innerText = "Your browser doesnt support geolocation"
+            }
+        }
+
+        function showPosition(position){
+            position.innerHTML = "Latitude :" + position.coords.latitute + "<br> Longitude :" + position.coords.longitude;
+        }
+
+        function showError(error) {
+        document.getElementById("location").innerHTML =
+        "Permission denied or location unavailable.";
+    }
+    </script>
 </body>
 </html>
