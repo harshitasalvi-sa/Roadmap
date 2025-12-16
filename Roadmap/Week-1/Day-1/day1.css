@@ -74,3 +74,54 @@ body{
     font-size: 1.1rem;
     padding: 5px 15px;
 }
+
+.tables{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px 0px;
+}
+table, th, td{
+    border-collapse: collapse;
+    padding: 5px;
+}
+tr:hover{
+    background-color: gainsboro;
+}
+.table-1 ,.table-1 th,.table-1 td{
+    border-style: dotted;
+}
+.table-1 th{
+    background-color: #d3ffc6;
+}
+.table-2 tr:nth-child(even){
+    background-color: #d3ffc6;
+}
+.table-3 th:nth-child(even), .table-3 td:nth-child(even){
+    background-color: #eefaea;
+}
+.table-2, .table-2 th, .table-2 td{
+    border: 2px solid black ;
+    border-radius: 10px;
+}
+.table-3, .table-3 th, .table-3 td{
+    border:2px white solid;
+    background-color: #d3ffc6;
+}
+.table-4, .table-4 th, .table-4 td{
+    border: 2px solid green;
+}
+.table-4 th{
+    background-color: #e8ffc7;
+}
+.table-5, .table-5 th, .table-5 td{
+    border: 1px groove green;
+}
+
+.lists{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
