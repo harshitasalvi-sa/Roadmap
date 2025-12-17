@@ -9,6 +9,7 @@ body{
 }
 .nav-bar{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between ;
     /* padding-right: 50px; */
@@ -148,11 +149,13 @@ tr:hover{
     top: 50%;
 }
 .list-of-navs a{
+    text-decoration: none;
     text-align: center;
     background-color: #d3ffc6;
+    border-radius: 50%;
     height: 50px;
     width: 50px;
-    margin: auto;
+    padding-top: 25%;
 }
 .grid{
     display: grid;
@@ -206,9 +209,11 @@ tr:hover{
         background-color: #d3ffc6;
         display: flex;
         flex-wrap: wrap ;
-        flex-direction: row;
+        flex-direction: column;
         padding: 2px;
         font-size: 0.5rem;
+        width: 100%;
+        align-content: center;
     }
     .nav-list-item a{
         width: 100%;
