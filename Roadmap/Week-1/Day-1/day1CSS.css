@@ -1,0 +1,46 @@
+:root{
+    --bg-color : white;
+    --text-color : #212121;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+nav{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    margin: 10px;
+    border-radius: 25px;
+}
+nav .title span{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+nav div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--bg-color);
+}
+nav p{
+    align-items: center;
+    padding: 10px;
+}
+
+.main{
+    margin: 25%;
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+  }
+}

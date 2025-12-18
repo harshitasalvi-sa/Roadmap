@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: optima;
+}
+body{
+    background-color: #212121;
+    color: white;
+}
+nav{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    margin: 10px;
+    border-radius: 25px;
+}
+nav .title span{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+nav div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+nav p{
+    align-items: center;
+    padding: 10px;
+}
+
+
+.intro{
+    margin: 12%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+.text-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-top: 2rem;
+}
+.text-intro span{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#00d9ff;
+    font-size: 2rem;
+}
+.intro .image img{
+    border-radius: 50%;
+
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    background:linear-gradient(135deg, #00ffff, #4169e1);
+}
+.about h1{
+    color: #212121;
+    text-align: center;
+    padding: 10px;
+    font-size: 3rem;
+}
+.about p{
+    margin:2% 12%;
+    font-size: 1.5rem;
+}
+.skill-grid{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 10px;
+}
+.html-skill{
+    width: 80%;
+    height: 10px;background-color: azure;
+    background-color: #212121;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects h1{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+    animation: moveBox 4s infinite ;
+}
+.marquee span { display: inline-block; padding-left: 100%; animation: scrollText 10s linear infinite; } @keyframes scrollText { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+@keyframes moveBox { from { left: 0; } to { left: 300px; } }
+.projects .project-list{
+    display: flex;
+    flex-direction: column;
+    margin: auto 5%;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60vh;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 2%;
+    margin-bottom: 0px;
+    padding: 40px;
+    align-items: center;
+    gap: 3%;
+}
+.items .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 5%;
+}
+.items .desc h3{
+    /* padding: 10px 0px; */
+    font-size: 2rem;
+    color: #00d9ff;
+}
+.items .desc h4{
+    padding: 5px 0px;
+    font-size: 1.2rem;
+}
+.item-1{
+    display: flex;
+    flex-direction: row;
+}
+.item-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.items .desc ul{
+    padding: 20px;
+    list-style-type: square;
+}
+
+.desc ul li{
+    padding: 5px 0px;
+}
+.contact-form{
+    color: #212121;
+    border: 1px solid gray;
+    background:linear-gradient(135deg, #00ffff, #4169e1);
+    border-radius: 15px;
+    width: 40%;
+    padding: 25px 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+.contact-form h2{
+    font-size: 1.7rem;
+}
+.contact-form form{
+    display: flex;
+    color: #212121;
+    flex-direction: column;
+    width: 86%;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+}
+.contact-form label{
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.contact-form input, textarea, select{
+    width: 100%;
+    background-color: #212121;
+    color: white;
+    border: 1px solid #00d9ff;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+.contact-form select{
+    color: gray;
+}
+.contact-form button{
+    background-color:white;
+    border-radius: 20px;
+    color: #212121;
+    border: none;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    width: 40%;
+    display: block;
+    margin: 10px auto 0; 
+}
+fieldset{
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+legend{
+    font-weight: 700;
+    margin-left: 20px;
+}
+footer{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    color:white;
+}
+
+@media (max-width : 900px){
+    .contact-form{
+        width: 75%;
+    }
+    .items{
+        flex-direction: column;
+    }
+    .items img{
+        width: 100%;
+    }
+}
