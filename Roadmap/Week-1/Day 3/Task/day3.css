@@ -35,14 +35,19 @@ main{
 }
 footer{
     grid-area: footer;
-    background-color: black;
+    background-color: rgb(164, 1, 1);
     color: white;
     padding: 1rem;
 }
 
 @media (max-width : 600px){
     body{
-        display: flex;
-        flex-direction: column;
+        grid-template-areas: 
+        "navbar"
+        "sidebar"
+        "main"
+        "footer";
+        grid-template-columns: 1fr;
     }
+    
 }

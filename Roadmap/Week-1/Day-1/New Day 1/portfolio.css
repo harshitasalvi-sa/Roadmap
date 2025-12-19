@@ -111,6 +111,7 @@ nav p{
     width: 40%;
     display: flex;
     flex-direction: column;
+    /* grid-template-columns: 1fr; */
     padding: 10px;
     justify-content: space-between;
     /* margin: auto; */
@@ -306,5 +307,10 @@ footer{
     .about .para{
         font-size: 0.8rem;
         width: 100%;
+    }
+    .skill-grid{
+        width: 94%;
+        margin: auto;
+        height: 300px;
     }
 }
