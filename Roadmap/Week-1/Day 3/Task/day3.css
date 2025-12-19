@@ -39,3 +39,10 @@ footer{
     color: white;
     padding: 1rem;
 }
+
+@media (max-width : 600px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+}
