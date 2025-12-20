@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+body{
+    /* display: grid;
+    grid-template-areas: 
+    "nav"
+    "intro"
+    "about"; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+nav{
+    background-color:#042894;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    width: 100%;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+.hamburger-icon{
+    display: none;
+}
+.intro{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 3% 4% ;
+    height: 80vh;
+    width: 90%;
+    /* background: #5c7aff;
+    background: linear-gradient(90deg,rgba(92, 122, 255, 1) 0%, rgba(87, 199, 188, 1) 50%, rgba(83, 237, 165, 1) 100%); */
+
+    /* background: #7598ff;
+    background: linear-gradient(90deg,rgba(117, 152, 255, 1) 0%, rgba(87, 199, 188, 1) 65%, rgba(86, 208, 183, 1) 71%, rgba(83, 237, 165, 1) 100%); */
+    background: #042894;
+    background: linear-gradient(90deg,rgba(4, 40, 148, 1) 0%, rgba(4, 40, 148, 1) 0%, rgba(54, 166, 159, 1) 75%, rgba(83, 237, 165, 1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+    color: white;
+    position: relative;
+}   
+.intro .rotated-pop{
+    position: absolute;
+    top: -15px;
+    left: 40%;
+    font-size: 1.3rem;
+    rotate: -6deg;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #53EDA5;
+
+}
+.intro .text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.intro h2{
+    font-size: 2.2rem;
+    margin: 15px 0px;
+}
+.intro img{
+    height: 100%;
+    width: 100%;
+}
+.intro button{
+    background-color: #53EDA5;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+}
+@media (max-width:682px){
+    .hamburger-icon{
+        display:unset;
+    }
+    .nav-list{
+        display: none;
+    }
+    .rotated-pop{
+        display: none;
+    }
+    .intro{
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro .text, .intro .image{
+        width: 100%;
+        text-align: center;
+    }
+    .intro button{
+        align-self: center;
+    }
+}
