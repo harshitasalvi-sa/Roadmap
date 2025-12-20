@@ -89,6 +89,55 @@ nav a{
     border: none;
     margin-top: 15px;
 }
+
+.about{
+    display: flex;
+    width: 90%;
+    height: 70vh;
+    flex-direction: column;
+    margin: auto;
+}
+.about-mid{
+    align-self: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    align-items: center;
+}
+.about-mid h3{
+    color: #042894;
+}
+.about .about-grid{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    justify-content: space-evenly;
+}
+.about .grid-item{
+    text-align: center;
+}
+.about .item-box{
+    background-color:#53EDA5;
+    border-radius: 20%;
+    box-shadow:  8px 7px #042894;
+    margin: 20px 2px;
+}
+.about .grid-item h4{
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+}
+.about .grid-item p{
+    font-size: 1.1rem;
+}
+.about .image{
+    flex-basis: 25%;
+    flex-grow:0;
+    flex-shrink: 0;
+}
+.about img{
+    height: 100%;
+    width: 100%;
+}
 @media (max-width:682px){
     .hamburger-icon{
         display:unset;
