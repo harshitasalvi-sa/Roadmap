@@ -40,6 +40,8 @@ nav a{
     border: 1px solid black;
     border-radius: 20px;
     margin: 3% 4% ;
+    /* min-height: 70vh;
+    height: auto; */
     height: 80vh;
     width: 90%;
     /* background: #5c7aff;
@@ -77,6 +79,9 @@ nav a{
     font-size: 2.2rem;
     margin: 15px 0px;
 }
+/* .intro image{
+    width: 50%;
+} */
 .intro img{
     height: 100%;
     width: 100%;
@@ -93,7 +98,8 @@ nav a{
 .about{
     display: flex;
     width: 90%;
-    height: 70vh;
+    min-height: 70vh;
+    height: auto;
     flex-direction: column;
     margin: auto;
 }
@@ -141,6 +147,356 @@ nav a{
     max-width: 90%;
     /* display: block; */
 }
+.working{
+    min-height: 70vh;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: flex-start;
+}
+.working .boxes{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: 40% 60%; */
+}
+.working .left-box{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.working .right-box{
+    width: 50%;
+    background: transparent;
+}
+.working .right-box img{
+    width: 100%;
+}
+.working .points{
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 20px 30px;
+    
+    width: 100%;
+    font-size: 1rem;
+}
+.working .bottom-box{
+    display: flex;
+    flex-flow: row;
+    margin-top: 20px;
+    gap: 40px;
+}
+.working .bottom-box .bottom-top-box{
+    display: inline-block;
+    height: auto;
+    width:80%;
+    background-color:#042894;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.working .bottom-box p{
+    font-size: 1.2rem;
+    width:80%;
+}
+.contact{
+    background-color: #042894;
+    min-height: 70vh;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: 
+    "h1 h1 h1"
+    "p p p"
+    "form timeline image" ;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+}
+.contact form{
+    width: 100%;
+    padding-right:10%;
+}
+.contact form .button{
+    width: 100%;
+    background-color:#53EDA5;
+}
+.contact form input{
+    height: 60px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px 0px;
+}
+.contact .timeline{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: auto;
+}
+.contact .timeline .path{
+    position: relative;
+    width: 2px;
+    background-color: white;
+}
+.contact .timeline .dot{
+    position: absolute;
+    left: -6px;
+    align-self: center;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+.contact .timeline .green-dot{
+    background-color:#53EDA5;
+}
+.contact .timeline .last{
+    background: transparent;
+}
+.contact .timeline .text{
+    text-align: left;
+}
+.contact h1{
+    grid-area: h1;
+}
+.contact p{
+    grid-area: p;
+    padding: 30px 0px;
+    color: #53EDA5;
+}
+.contact form{
+    grid-area: form;
+}
+.contact .timeline{
+    grid-area: timeline;
+}
+.contact img{
+    grid-area: image;
+    width:100%;
+    height: 110%;
+    padding: 0;
+}
+.info{
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    padding: 20px 50px;
+    align-content: center;
+
+}
+.info .heading{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color:#042894;
+}
+.info .boxes{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    
+}
+.info .image-box{
+    border: 2px solid #042894;
+    border-radius: 25px;
+    box-shadow: 11px 12px 12px 1px #042894;
+    margin: 20px 0px;
+    padding: 20px;
+}
+.info .box{
+    text-align: center;
+}
+.info .box h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+.info .boxes img{
+    height: 100%;
+    width: 100%;
+}
+.results{
+    display: flex;
+    flex-direction:column;
+    width: 80%;
+}
+.data h4{
+    padding: 10px 0px;
+}
+.results .data{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+.results .data-box-1,.results .data-box-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+.results .item-1, .results .item-2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 30px;
+    flex-direction: row;
+    width: 80%;
+}
+.results .item-1 div{
+    background-color:#53EDA5;
+    width: 70%;
+    height: 30px;
+}
+.results .item-2 div{
+    background-color:#042894;
+    width: 80%;
+    height: 30px;
+}
+.results .logos{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-evenly;
+    width: 70%;
+}
+.results img{
+    height: 150px;
+    width: 150px;
+    border-radius: 225%;
+}
+.testimonials{
+  width: 80%;
+}
+.testimonials .boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+}
+.testimonials .green-box{
+    background-color:#b5fcdb;
+}
+.testimonials .green-box button{
+    width: 50%;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color:#00944f;
+}
+.testimonials .blue-box button{
+    width: 50%;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color:#042894;
+}
+.testimonials .blue-box button{
+    background-color:#042894;
+}
+.testimonials .blue-box{
+    background-color:#a0b7ff;
+}
+.testimonials .green-box,.testimonials .blue-box{
+    height: 250px;
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.results h3{
+    align-self: center;
+    padding: 40px;
+}
+footer{
+    margin-top: 10%;
+    width: 100%;
+}
+footer .yellow-div{
+    /* padding: 4%; */
+    background-color:#53EDA5;
+    padding: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .yellow-div .first{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-content: flex-start;
+    font-size: 1.4rem;
+}
+footer .yellow-div .second{
+    padding-right:70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .yellow-div .second p{
+    font-size: 1.5rem;
+}
+footer .yellow-div .second div{
+    width: 80%;
+}
+footer .social a{
+    color: black;
+}
+footer .foot{
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#042894;
+}
+footer .foot .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    align-items: center;
+}
+footer form .button{
+    width: 100%;
+    background-color:#042894;
+    color: white;
+}
+footer form input{
+    height: 60px;
+    padding: 20px;
+    border-radius: 5px;
+
+    width: 100%;
+    margin: 5px 0px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer .foot button{
+    background-color:#53EDA5;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+} 
 @media (max-width:682px){
     .hamburger-icon{
         display:unset;
@@ -152,6 +508,174 @@ nav a{
         display: none;
     }
     .intro{
+        width: 100%;
+        height: auto;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 5px;
+        text-align: justify;
+    }
+    .intro h2{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .intro button{
+        padding: 10px 6px;
+        width: 90%;
+    }
+    .intro p{
+        font-size: 0.8rem;
+    }
+    .about{
+        justify-content: center;
+        margin-top: 40px;
+        width: 90%;
+    }
+    .about h2{
+        text-align: center;
+    }
+    .about-mid h3{
+        text-align: center;
+        padding: 10px ;
+    }
+    .about-mid{
+        text-align: center;
+        flex-flow: column wrap;
+        gap: 5px;
+    }
+    .about .about-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: space-evenly;
+    }
+    .about .item-box{
+        display: none;
+    }
+    .about .grid-text{
+        background-color:#53EDA5;
+        border-radius: 20px;
+        box-shadow:  8px 7px #042894;
+        margin: 10px 2px;
+        padding: 10px;
+    }
+    .about .grid-text h4{
+        color: #042894;
+        font-size: medium;
+    }
+    .about .grid-text p{
+        font-size: small;
+    }
+    .working{
+        width: 90%;
+        height: auto;
+        
+        /* grid-template-areas:
+        "upper-box"
+        "lower-box"
+        "laptop"
+        "left-box"; */
+        margin-top: 50px;
+    }
+    .working .content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bottom-top-box{
+        width: 0px;
+    }
+    .working .box-1{
+        grid-area: upper-box;
+        width: 90%;
+    }
+    .working .box-2{
+        grid-area: lower-box;
+        width: 80%;
+    }
+    .working .laptop{
+        grid-area: laptop;
+    }
+    .working .boxes{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        /* display: grid;
+        grid-template-columns: 40% 60%; */
+    }
+    .working .left-box{
+        grid-area: left-box;
+        width: 100%;
+        /* width: 40%;
+        display: flex;
+        flex-direction: column;*/
+        gap: 5px; 
+    }
+    .working .right-box{
+        
+        background: transparent;
+    }
+    .working .wrapper{
+        width: 100%;
+    }
+    .working .right-box img{
+        /* position:absolute;
+        left: 50%;
+        overflow-x: hidden;
+        width: 100%; */
+    }
+    .working .points{
+       background-color: transparent;
+       width: 100%;
+       padding: 5px;
+       font-size: 0.8rem;
+    }
+    .working .points::before{
+        content: "•";
+        align-items: center;
+        width: 10px;
+        height: 10px;
+        color: #53EDA5;
+    }
+    .working .bottom-box{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+    .working .bottom-box .bottom-top-box{
+        font-size: 0.6rem;
+        width: 80%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .working .bottom-box p{
+        display: none;
+    }
+    .contact{
+        width: 100%;
+        padding: 10%;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h1"
+        "p"
+        "timeline"
+        "form";
+    }
+    .contact form{
+        width: 100%;
+        padding: 0px;
+        margin-top: 20px;
+    }
+    .contact img{
+        display: none;
+    }
+    .contact .timeline{
+        gap: 10px;
+    }
+    .intro{
         flex-direction: column;
         text-align: center;
     }
@@ -161,5 +685,27 @@ nav a{
     }
     .intro button{
         align-self: center;
+    }
+    .info .boxes{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .info .first-box{
+        align-content: center;
+    }
+    .info .second-box{
+        align-self: left;
+        text-align: left;
+        justify-content: flex-start;
+    }
+    .info .third-box{
+        align-content: right;
+        text-align: right;
+        justify-content: flex-end;
+    }
+    .info .image-box{
+        background: transparent;
+        border: none;
+        box-shadow: none;
     }
 }
