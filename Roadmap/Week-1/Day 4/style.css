@@ -350,6 +350,7 @@ nav a:hover{
     width: 100%;
 }
 .results{
+    margin-top: 30px;
     display: flex;
     flex-direction:column;
     width: 80%;
@@ -563,8 +564,128 @@ nav a:hover{
 .dot.active {
   background:#53EDA5;
 }
+.reviews {
+  padding: 60px 20px;
+  width: 90%;
+  border-radius: 50px;
+  border: 6px double #53EDA5;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  margin: 10px auto;
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.reviews-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.reviews-header p {
+  color: #555;
+  line-height: 1.4;
+}
+
+.reviews-stat {
+  max-width: 280px;
+}
+
+.reviews-stat span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #042894;
+}
+
+.reviews-stat p {
+  margin-top: 6px;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* Cards */
+.reviews-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.review-card {
+  background: #d7feec;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 0 #53EDA5;
+}
+
+.review-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.review-user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-user h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.review-user span {
+  font-size: 13px;
+  color: #666;
+}
+
+.review-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Button */
+.reviews-action {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.reviews-action button {
+  background: #042894;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.reviews-action button:hover {
+  background: #5a3fe0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .reviews-header {
+    flex-direction: column;
+  }
+
+  .reviews-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 footer{
     width: 100%;
+    margin-top: 30px;
 }
 footer .yellow-div{
     background-color:#53EDA5;
@@ -572,6 +693,8 @@ footer .yellow-div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 footer .yellow-div .first{
     display: flex;
