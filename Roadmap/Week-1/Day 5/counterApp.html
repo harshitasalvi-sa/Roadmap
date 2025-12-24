@@ -9,15 +9,16 @@
 <body>
     <div class="container">
         <h2>Counter App</h2>
-        <p>Number is : </p>
-        <div class="internal-div">
-            <button class="incr" onclick = increment() id="incr-btn">
+        <p>Count : <span id="count"></span></p>
+        <p id="msg"></p>
+        <div class="internal-div">        
+            <button class="decr" id="decr-btn">
+                -
+            </button>
+            
+            <button class="incr" id="incr-btn">
             +
-        </button>
-        
-        <button class="decr" onclick=increment()>
-            -
-        </button>
+            </button>
         </div>
     </div>
     <script src="script.js"></script>

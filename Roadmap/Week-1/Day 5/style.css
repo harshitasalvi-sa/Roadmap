@@ -30,10 +30,19 @@ body{
     color: white;
     font-size: 1.5rem;
 }
+.container .decr{
+    background-color: rgb(255, 48, 48);
+}
 .internal-div{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
     width: 50%;
+}
+#msg{
+    display: none;
+    color: red;
+    font-size: large;
+    font-weight: 900;
 }
