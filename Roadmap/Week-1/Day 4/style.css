@@ -458,20 +458,11 @@ nav a:hover{
 .testimonials .blue-box button{
     background-color:#042894;
 }
-.testimonials .box h3{
-    /* font-size: 2rem; */
-}
-.testimonials .box h4{
-    /* font-size: 1.6rem; */
-}
-.testimonials .box p{
-    /* font-size: 1.4rem; */
-}
+
 .testimonials .box button{
     padding: 5px 15px;
     height: 50px;
 }
-
 .trainers{
   padding: 60px 20px;
 
@@ -489,11 +480,9 @@ nav a:hover{
   color: #555;
   line-height: 1.5;
 }
-
 .slider-wrapper {
   overflow: hidden;
 }
-
 .slider-track {
   padding: 20px;
   display: flex;
@@ -501,7 +490,6 @@ nav a:hover{
 }
 
 .trainer-card{
-  flex: 0 0 calc(50% - 10px); /* two cards visible */
   background:#d7feec;
   border-radius: 16px;
   padding: 20px;
@@ -549,7 +537,7 @@ nav a:hover{
   background:#042894;
   color: #fff;
   font-size: 20px;
-  cursor: pointer;
+  cursor:pointer;
 }
 .dots{
   display: flex;
@@ -564,7 +552,7 @@ nav a:hover{
 .dot.active {
   background:#53EDA5;
 }
-.reviews {
+.reviews{
   padding: 60px 20px;
   width: 90%;
   border-radius: 50px;
@@ -573,116 +561,86 @@ nav a:hover{
   padding: 40px;
   margin: 10px auto;
 }
-
-.reviews-header {
+.reviews-header{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 30px;
   margin-bottom: 40px;
 }
-
-.reviews-header h2 {
-  font-size: 32px;
+.reviews-header h2{
+  font-size: 1.8rem;
   margin-bottom: 10px;
 }
-
-.reviews-header p {
+.reviews-header p{
   color: #555;
   line-height: 1.4;
 }
-
-.reviews-stat {
+.reviews-stat{
   max-width: 280px;
 }
-
-.reviews-stat span {
-  font-size: 40px;
+.reviews-stat span{
+  font-size: 1.8rem;
   font-weight: bold;
   color: #042894;
 }
-
-.reviews-stat p {
+.reviews-stat p{
   margin-top: 6px;
   color: #444;
   line-height: 1.4;
 }
-
-/* Cards */
-.reviews-cards {
+.reviews-cards{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
-.review-card {
+.review-card{
   background: #d7feec;
   border-radius: 18px;
   padding: 24px;
   box-shadow: 0 10px 0 #53EDA5;
 }
-
-.review-user {
+.review-user{
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 16px;
 }
-
-.review-user img {
+.review-user img{
   width: 48px;
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
 }
-
-.review-user h4 {
+.review-user h4{
   margin: 0;
   font-size: 16px;
 }
-
-.review-user span {
+.review-user span{
   font-size: 13px;
   color: #666;
 }
-
-.review-text {
+.review-text{
   font-size: 14px;
   line-height: 1.6;
   color: #333;
 }
-
-/* Button */
-.reviews-action {
+.reviews-action{
   text-align: center;
   margin-top: 40px;
 }
-
-.reviews-action button {
+.reviews-action button{
   background: #042894;
-  color: #fff;
+  color: white;
   border: none;
   padding: 14px 28px;
   border-radius: 10px;
   font-size: 14px;
   cursor: pointer;
 }
-
-.reviews-action button:hover {
-  background: #5a3fe0;
+.reviews-action button:hover{
+  background: #04289488;
 }
-
-/* Responsive */
-@media (max-width: 900px) {
-  .reviews-header {
-    flex-direction: column;
-  }
-
-  .reviews-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
 footer{
     width: 100%;
     margin-top: 30px;
@@ -704,7 +662,6 @@ footer .yellow-div .first{
     font-size: 1.4rem;
 }
 footer .yellow-div .second{
-    /* padding-right:20%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -885,12 +842,6 @@ footer .list-items{
     .working .wrapper{
         width: 100%;
     }
-    .working .right-box img{
-        /* position:absolute;
-        left: 50%;
-        overflow-x: hidden;
-        width: 100%; */
-    }
     .working .points{
        background-color: transparent;
        width: 100%;
@@ -977,8 +928,6 @@ footer .list-items{
     .results img{
         max-height: 70px;
         max-width: 70px;
-        /* min-height: 100px;
-        min-width: 100px; */
         border-radius: 50%;
     }
     .results{
@@ -1016,6 +965,13 @@ footer .list-items{
     }
     .trainer-card {
         flex: 0 0 100%;
+    }
+    .reviews-header {
+        flex-direction: column;
+    }
+
+    .reviews-cards {
+        grid-template-columns: 1fr;
     }
     footer .yellow-div{
         padding-top: 40px;
