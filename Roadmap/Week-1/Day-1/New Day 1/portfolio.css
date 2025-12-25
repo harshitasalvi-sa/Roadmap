@@ -1,9 +1,7 @@
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: optima; */
     font-family:  "Lexend";
     text-align: justify;
 }
@@ -17,20 +15,29 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 5px 20px;
-    margin: 20px 30px;
+    margin: 20px auto;
     border-radius: 25px;
+    width: 90%;
 }
 nav .title span{
     font-size: 1.3rem;
     font-weight: bolder;
+    padding-left: 30px;
 }
 nav div{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
+nav .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35%;
+}
 nav a{
-    padding: 10px;
+    /* padding: 10px; */
     text-decoration: none;
     color: black;
 }
@@ -38,10 +45,11 @@ nav p{
     align-items: center;
     padding: 10px;
 }
-
-
+nav .list a:hover, nav .list p:hover{
+    color: #00d9ff;
+}
 .intro{
-    margin: 12%;
+    margin: 8% 12%;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -58,16 +66,21 @@ nav p{
 .text-intro span{
     font-family: "Pacifico", cursive, sans-serif;
     color:#00d9ff;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
-.image{
+.intro .icons a img{
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.intro .image{
     display: flex;
     justify-content: center;
 }
 .intro .image img{
-    border-radius: 50%;
+    border-radius: 10px;
     height: auto;
     width: 60%;
+    box-shadow: 0px 0px 13px 0px #808080;
 }
 .intro-btn{
     padding: 10px;
@@ -88,11 +101,11 @@ nav p{
     padding-bottom: 30px;
     background:linear-gradient(135deg, #00ffff, #4169e1);
 }
-.about h1{
+.about h2{
     color: #212121;
     text-align: center;
     padding: 10px;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .about-flex{
     width: 100%;
@@ -117,7 +130,7 @@ nav p{
     /* margin: auto; */
     padding: 2%;
 }
-.skill-grid h2{
+.skill-grid h3{
     color: #212121;
     margin: 5px 0px;
 }
@@ -161,8 +174,8 @@ nav p{
     flex-direction: column;
     justify-content: center;
 }
-.projects h1{
-    font-size: 3rem;
+.projects h2{
+    font-size: 2.5rem;
     text-align: center;
     padding-top: 30px;
     position: relative;
@@ -173,18 +186,22 @@ nav p{
     flex-direction: column;
     margin: auto 5%;
 }
+.projects img{
+    border-radius: 10px;
+}
 .items{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     height: 100%;
-    border: 1px solid gray;
+    border: 1px solid #4169e1;
     border-radius: 15px;
     margin: 2%;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     padding: 40px;
     align-items: center;
     gap: 3%;
+    box-shadow: 0px 0px 15px #00d9ff;
 }
 .items .desc{
     display: flex;
@@ -213,7 +230,9 @@ nav p{
     padding: 20px;
     list-style-type: square;
 }
-
+.items a{
+    color:#00d9ff;
+}
 .desc ul li{
     padding: 5px 0px;
     font-size: 0.8rem;
@@ -231,6 +250,7 @@ nav p{
 }
 .contact-form h2{
     font-size: 1.7rem;
+    text-align: center;
 }
 .contact-form form{
     display: flex;
@@ -265,7 +285,8 @@ nav p{
     padding: 5px 15px;
     width: 40%;
     display: block;
-    margin: 10px auto 0; 
+    margin: 5px auto ; 
+    text-align: center;
 }
 fieldset{
     border-radius: 25px;
@@ -286,9 +307,34 @@ footer{
     padding: 20px;
     justify-content: center;
     color:white;
+    box-shadow: 0px -3px 20px #00d9ff;
+    margin-top: 30px;
 }
 
 @media (max-width : 900px){
+    nav{
+        border-radius: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    nav .list{
+        width: 100%;
+        font-size: 0.7rem;
+        margin: 0px;
+        justify-content: space-evenly;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 1px;
+        align-items: center;
+    }
+    .intro .text-intro{
+        justify-content: center;
+        align-items: center;
+    }
     .contact-form{
         width: 75%;
     }

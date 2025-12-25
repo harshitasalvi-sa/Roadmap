@@ -14,7 +14,6 @@ function counter(min, max){
 
     function increment(){
         if(count < max){
-            //msg.innerText = "";
             msg.style.display = "none";
             count++;
         }
@@ -23,6 +22,7 @@ function counter(min, max){
             msg.innerText = "Maximum count reached!";
         }
         render();
+        toggleIncrBtnDisable();
     }
 
     function decrement(){
@@ -35,11 +35,22 @@ function counter(min, max){
             msg.innerText = "Minimum count reached!"
         }
         render();
+        toggleIncrBtnDisable();
+    }
+    function toggleIncrBtnDisable(){
+        if(count >= max){
+            incrBtn.disabled = true;
+        }
+        else{
+            incrBtn.disabled = false;
+        }
     }
 
     incrBtn.addEventListener("click", increment);
     decrBtn.addEventListener("click", decrement);
-}
 
-counter(-10, 4);
+    toggleIncrBtnDisable();
+} 
+
+counter(-10, 10);
 
