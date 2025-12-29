@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family:  "Lexend";
-    /* text-align: justify; */
 }
 html {
   scroll-behavior: smooth;
@@ -58,8 +57,6 @@ nav .list a:hover, nav .list p:hover{
     gap: 20px;
     justify-content: space-between;
     width: 88%;
-    /* background-color: #808080;
-    backdrop-filter: blur(20px); */
 }
 .text-intro{
     display: flex;
@@ -188,6 +185,7 @@ nav .list a:hover, nav .list p:hover{
 .projects h2{
     font-size: 2.5rem;
     text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px #00d9ff, 0 0 5px #4169e1;
     padding-top: 30px;
     position: relative;
     animation: moveBox 4s infinite ;
@@ -205,14 +203,19 @@ nav .list a:hover, nav .list p:hover{
     flex-direction: row;
     justify-content: space-evenly;
     height: 100%;
-    border: 1px solid #4169e1;
+    border: 1px solid #808080;
     border-radius: 15px;
     margin: 2%;
     margin-bottom: 10px;
     padding: 40px;
     align-items: center;
     gap: 3%;
-    box-shadow: 0px 0px 15px #00d9ff;
+    transition: transform 0.2s ease;
+}
+.items:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px #00d9ff;
+    border: none;
 }
 .items .desc{
     display: flex;
@@ -221,9 +224,9 @@ nav .list a:hover, nav .list p:hover{
     padding-left: 5%;
 }
 .items .desc h3{
-    /* padding: 10px 0px; */
     font-size: 2rem;
     color: #00d9ff;
+    
 }
 .items .desc h4{
     padding: 5px 0px;
@@ -254,7 +257,25 @@ nav .list a:hover, nav .list p:hover{
     margin: 60px auto;
     display: flex;
     align-items:baseline;
+/* 
+    position: relative;
+    padding: 120px 20px;
+    overflow: hidden; */
 }
+
+/* .event-gallery::before{
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: -120px;
+  width: 120%;
+  height: 260px;                 
+  background: rgba(0,217,255,0.12);
+  transform: skewY(-6deg);       
+  transform-origin: 0;
+  z-index: -1;
+  pointer-events: none;         
+} */
 .event-gallery h2{
     font-size: 3rem;
 }
@@ -400,5 +421,12 @@ footer{
         width: 94%;
         margin: auto;
         height: 300px;
+    }
+    .event-gallery{
+        flex-direction: column;
+        height: auto;
+    }
+    .event-gallery h2, .event-gallery p{
+        text-align: center;
     }
 }

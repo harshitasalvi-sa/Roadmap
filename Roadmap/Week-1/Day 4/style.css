@@ -61,7 +61,11 @@ nav a:hover{
     padding: 15px 20px;
     border-radius: 10px;
     background-color: #53EDA5;
-
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+.intro .rotated-pop:hover{
+    transform: scale(1.05);
 }
 .intro .text{
     width: 45%;
@@ -73,9 +77,6 @@ nav a:hover{
     font-size: 2.2rem;
     margin: 15px 0px;
 }
-/* .intro image{
-    width: 50%;
-} */
 .intro img{
     height: 100%;
     width: 100%;
@@ -188,7 +189,7 @@ nav a:hover{
     width: 100%;
 }
 .working .points{
-    background-color: aquamarine;
+    background:linear-gradient(aquamarine, #afffe4);
     border-radius: 20px;
     padding: 20px 30px;
     box-shadow: 15px 4px 20px 0px #eceaea;;
@@ -196,7 +197,7 @@ nav a:hover{
     font-size: 1rem;
 }
 .working .points:hover{
-    background-color:#d7feec;
+    background:#d7feec;
     box-shadow: 5px 4px 20px 0px #53EDA5;
 }
 .working .bottom-box{
@@ -843,7 +844,7 @@ footer .list-items{
         width: 100%;
     }
     .working .points{
-       background-color: transparent;
+       background: transparent;
        width: 100%;
        padding: 5px;
        font-size: 0.8rem;
