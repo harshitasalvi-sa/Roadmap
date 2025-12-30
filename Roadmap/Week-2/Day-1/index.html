@@ -10,26 +10,34 @@
 
     <div class="container">
         <div class="calculator">
-            <div class="display">
-
+            <div class="display" id="display">
+                0
             </div>
             <div class="num-pad">
-                <div class="num" value = "1">1</div>
-                <div class="num">2</div>
-                <div class="num">3</div>
-                <div class="num symbol">+</div>
-                <div class="num">4</div>
-                <div class="num">5</div>
-                <div class="num">6</div>
-                <div class="num symbol">-</div>
-                <div class="num">7</div>
-                <div class="num">8</div>
-                <div class="num">9</div>
-                <div class="num symbol">*</div>
-                <div class="num">.</div>
-                <div class="num">0</div>
-                <div class="num">=</div>
-                <div class="num symbol">/</div>
+                <button id="clear" >AC</button>
+                <button class="operator">D</button>
+                <button class="operator"><sup>+</sup>/ <sub>-</sub></button>
+                <button class="operator">%</button>
+
+                <button class="num" value = "7">7</button>
+                <button class="num" value = "8">8</button>
+                <button class="num" value = "9">9</button>
+                <button class="operator">/</button>
+
+                <button class="num" value = "4">4</button>
+                <button class="num" value = "5">5</button>
+                <button class="num" value = "6">6</button>
+                <button class="operator">-</button>
+
+                <button class="num" value = "1">1</button>
+                <button class="num" value = "2">2</button>
+                <button class="num" value = "3">3</button>
+                <button class="operator">+</button>
+
+                <button class="num">00</button>
+                <button class="num" value = "0">0</button>
+                <button class="num">.</button>
+                <button id="equal">=</button>
             </div>
         </div>
     </div>

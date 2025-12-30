@@ -7,36 +7,64 @@
     margin: auto;
 }
 .calculator{
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
     height: 500px;
     width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    
+    margin: 50px auto;
+    box-shadow: 0px 2px 18px 7px #bebcbc;;
+    border-radius:5%;
 }
 .display{
     height: 70px;
     width: 90%;
     background-color: #fff;
-
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0px 10px;
+    border-radius: 20px;
+    border: 1px groove gray;
+    font-size: 2rem;
+    box-shadow: 0px 0px 5px 0px inset gainsboro;
 }
 .num-pad{
-    height: 70%;
+    height: 80%;
     width: 90%;
-    background-color: gray;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.num{
-    background-color: #fff;
+ .operator{
+    background-color: orange;
+    color: white;
+ }
+.num, #clear, #equal, .operator{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     margin: 10px;
     border-radius: 50%;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: -3px -3px 5px 1px white;
+}
+.num{
+    background-color: gainsboro;
+}
+button:hover{
+    background-color:#bebcbc;
+}
+#clear{
+    background-color: rgb(255, 207, 117);
+    border: 3px solid orange;
+    color: white;
+}
+#clear:hover{
+    background-color: orange;
 }

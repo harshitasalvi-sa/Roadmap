@@ -21,7 +21,6 @@ nav{
     color: white;
     position: sticky;
     top: 0;
-    
 }
 aside{
     grid-area: sidebar;

@@ -248,6 +248,9 @@ nav a:hover{
     width: 100%;
     background-color:#53EDA5;
 }
+.contact form .button:hover{
+    background-color: #d7feec;
+}
 .contact form input{
     height: 60px;
     padding: 20px;
@@ -558,7 +561,6 @@ nav a:hover{
   width: 90%;
   border-radius: 50px;
   border: 6px double #53EDA5;
-  font-family: Arial, sans-serif;
   padding: 40px;
   margin: 10px auto;
 }
@@ -698,6 +700,9 @@ footer form .button{
     background-color:#042894;
     color: white;
 }
+footer form .button:hover{
+    transform: scale(1.02);
+}
 footer form input{
     height: 60px;
     padding: 20px;
@@ -715,11 +720,17 @@ footer .foot button{
     border: none;
     border-radius: 5px;
 } 
+footer .foot button:hover{
+    transform: scale(1.02);
+}
 footer .list-items{
     width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+footer .list-items a:hover{
+    color:#00aa74
 }
 @media (max-width:682px){
     .hamburger-icon{
@@ -794,12 +805,6 @@ footer .list-items{
     .working{
         width: 90%;
         height: auto;
-        
-        /* grid-template-areas:
-        "upper-box"
-        "lower-box"
-        "laptop"
-        "left-box"; */
         margin-top: 50px;
     }
     .working .content{
@@ -825,15 +830,10 @@ footer .list-items{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-between;
-        /* display: grid;
-        grid-template-columns: 40% 60%; */
     }
     .working .left-box{
         grid-area: left-box;
         width: 100%;
-        /* width: 40%;
-        display: flex;
-        flex-direction: column;*/
         gap: 5px; 
     }
     .working .right-box{
@@ -848,6 +848,7 @@ footer .list-items{
        width: 100%;
        padding: 5px;
        font-size: 0.8rem;
+       box-shadow: none;
     }
     .working .points::before{
         content: "•";
