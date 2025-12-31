@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <header class="header">
+      <h1>Product List</h1>
+      <p class="lead">All your products at a single place</p>
+    </header>
+
+    <section class="controls" aria-label="Product filters">
+      <div class="control">
+        <label for="searchInput" class="visually-hidden">Search</label>
+        <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+      </div>
+
+      <div class="control">
+        <label for="categorySelect">Category</label>
+        <select id="categorySelect">
+          <option value="all">All</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Home">Home</option>
+          <option value="Beauty">Beauty</option>
+          <option value="Sports">Sports</option>
+        </select>
+      </div>
+
+      <div class="control">
+        <label for="minPrice">Price</label>
+        <div class="price-inputs">
+          <input id="minPrice" type="number" placeholder="Min" min="0">
+          <span class="sep">—</span>
+          <input id="maxPrice" type="number" placeholder="Max" min="0">
+        </div>
+      </div>
+
+      <div class="control">
+        <label for="sortSelect">Sort</label>
+        <select id="sortSelect">
+          <option value="">Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+
+      <div class="control view-toggle" role="group" aria-label="Toggle view">
+        <button id="gridBtn" title="Grid view">Grid</button>
+        <button id="listBtn" title="List view">List</button>
+      </div>
+    </section>
+
+    <section id="productsContainer" class="products grid" aria-live="polite">
+    </section>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+:root {
+    --bg: #f5f7fb;
+    --card: #fff;
+    --muted: #6b7280;
+    --accent: #0f62fe;
+    --radius: 12px
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Inter', system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 24px;
+    background: var(--bg);
+    color: #111
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--accent)
+}
+
+.logo span {
+    color: #111;
+    font-weight: 700
+}
+
+.search-hero h1 {
+    margin: 0;
+    font-size: 1.6rem
+}
+
+.search-hero .subtitle {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px
+}
+
+input,
+select,
+button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #e6e9ef;
+    background: #fff
+}
+
+input {
+    flex: 1;
+    min-width: 180px
+}
+
+button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    cursor: pointer
+}
+
+button#toggleView {
+    background: #111
+}
+
+#productContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px
+}
+
+.product {
+    background: var(--card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+    display: flex;
+    flex-direction: column
+}
+
+.product-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover
+}
+
+.product-info {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+}
+
+.product h3 {
+    margin: 0;
+    font-size: 1rem
+}
+
+.product p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem
+}
+
+.product .price {
+    color: var(--accent);
+    font-weight: 600
+}
+
+.list .product {
+    flex-direction: row;
+    align-items: center
+}
+
+.list .product-image {
+    width: 160px;
+    height: 100px
+}
+
+.empty {
+    padding: 40px;
+    text-align: center;
+    color: var(--muted);
+    grid-column: 1/-1
+}
+
+@media (max-width:600px) {
+    .controls {
+        flex-direction: column;
+        align-items: stretch
+    }
+
+    .product-image {
+        height: 140px
+    }
+}
