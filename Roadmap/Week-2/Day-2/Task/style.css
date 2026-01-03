@@ -94,7 +94,7 @@ main {
     white-space: nowrap;
 }
 
-/* Products grid */
+
 .products.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -103,13 +103,14 @@ main {
     width: 100%;
     justify-content: flex-start;
 }
-/* 
+
 .products.list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
     gap: var(--gap);
     width: 100%;
-} */
+}
 
 .product-card {
     background: var(--card-bg);
