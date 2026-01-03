@@ -69,6 +69,21 @@ p{
 	line-height: 1.6
 }
 
+#location-btn{
+	background-color:greenyellow;
+	padding: 10px;
+	border-radius: 20px;
+	border: 2px dotted white;
+	margin: 10px;
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+#location-btn:hover{
+	background-color: crimson;
+
+}
+
 @media (max-width:600px) {
 	.top {
 		padding: 0.75rem

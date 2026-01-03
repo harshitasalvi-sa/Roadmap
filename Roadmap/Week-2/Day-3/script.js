@@ -1,5 +1,6 @@
 const outerThemeBtn = document.getElementById("outer");
 const innerThemeBtn = document.getElementById("inner");
+const locationBtn = document.getElementById("location-btn");
 
 function applyTheme(theme) {
     //INTIAL CODE
@@ -13,7 +14,7 @@ function applyTheme(theme) {
         innerThemeBtn.textContent = "☀️";
     }
 
-     //OPTIMISED CODE
+    //OPTIMISED CODE
     //const isDark = theme === "dark";
     //document.body.classList.toggle("dark", isDark);
     //outerThemeBtn.style.justifyContent = isDark ? "flex-end" : "flex-start";
@@ -28,6 +29,7 @@ function applyTheme(theme) {
     
 }
 
+//micor
 innerThemeBtn.addEventListener("click", ()=>{
     //INTIAL CODE
     // const isDark= document.body.classList.contains("dark");
@@ -59,6 +61,7 @@ else{
 
 
 //GEOLOCATION API : EXTRA
+
 function getLocation() {
   try {
     navigator.geolocation.getCurrentPosition(showPosition);
@@ -74,4 +77,21 @@ function showPosition(position) {
   box.innerHTML = `
   Latitude : ${position.coords.latitude}    
   <br/>Longitude : ${position.coords.longitude}`;
+  console.log(Date.now());
 }
+
+function throttle(fn, delay){
+  let lastCall = 0;
+
+  return function(...agrs){
+    const now = Date.now();
+    if(now - lastCall >= delay){
+      fn(...agrs);
+      lastCall = now;
+    }
+  }
+}
+
+const getLocationWithThrottle = throttle(getLocation, 3000);
+
+locationBtn.addEventListener("click", getLocationWithThrottle);
