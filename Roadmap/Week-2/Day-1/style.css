@@ -38,11 +38,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
- .operator{
+ .operator, #backspaceBtn{
     background-color: orange;
     color: white;
  }
-.num, #clear, #equal, .operator{
+.num, #clear, #equal,#backspaceBtn, .operator{
     display: flex;
     justify-content: center;
     align-items: center;
