@@ -1,0 +1,8 @@
+.blog-list{
+    width: 70vh;
+    margin: auto;
+}
+li{
+    padding: 10px 20px;
+    text-align: start;
+}

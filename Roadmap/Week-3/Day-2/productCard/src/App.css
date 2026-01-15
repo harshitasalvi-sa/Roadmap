@@ -4,6 +4,7 @@
   padding: 2rem;
   text-align: center;
 }
+
 .product-grid{
   width: 90%;
   display: flex;
@@ -11,4 +12,33 @@
   flex-direction: row;
   gap: 2rem;
   margin: auto;
+}
+.sale-wrapper {
+  position: fixed;
+  left: 30px;
+  bottom: 0;
+  height: 100vh;
+  overflow: hidden;
+  gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sale, .sale-clone {
+  writing-mode: sideways-rl;
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  padding: 0 6px;
+  position: fixed;
+  left: 30px;
+  bottom: 0px;
+  white-space: nowrap;
+}
+
+@keyframes seamless {
+  from{transform: translateY(0);}
+  to{transform: translateY(-100%);}
 }

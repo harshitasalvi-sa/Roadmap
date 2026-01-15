@@ -1,0 +1,141 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+input{
+    font-size: 1.8rem;
+    padding: 10px;
+}
+#add-task-btn{
+    padding: 10px;
+}
+
+.list{
+    list-style-type: none;
+    width: 60%;
+    margin: 20px auto;
+    
+    color: black;
+    font-size: 1.2rem;
+}
+.list li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;   
+    background-color: #ffd5d5;
+    padding: 10px;
+}
+.list-right{
+    margin: 0px 20px;
+    display: flex;
+    gap: 2rem;
+} */
+
+
+/* Global reset (optional but recommended) */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6d6ed, #d6ffe7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  width: 700px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  
+}
+
+form input[type="text"],
+form input[type="date"] {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e0dfe3;
+  background-color: #fafafa;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus {
+  border-color: #c9a7eb;
+}
+
+#add-task-btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #c9a7eb, #f4a7c1);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#add-task-btn:hover {
+  transform: scale(1.05);
+}
+
+.tasks {
+  margin-top: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+/* .list li::before {
+  content: "🌸";
+  position: absolute;
+  left: 8px;
+  padding-right: 10px;
+} */
+.li{
+  display: grid;
+  grid-template-columns: 20px auto;
+  align-items: center;
+}
+.li>span{
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+
+
+

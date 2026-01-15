@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    gap: 50%;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 5rem;
+}
+.link-items{
+    text-decoration: none;
+    color: gray;
+}
+.link-items:hover{
+    color: black;
+}

@@ -1,0 +1,19 @@
+.blog-details {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  font-family: "Georgia", serif;
+}
+
+.blog-details img {
+  width: 100%;
+  border-radius: 16px;
+  margin: 1.5rem 0;
+}
+
+.blog-details h1 {
+  color: #1e3a8a;
+}

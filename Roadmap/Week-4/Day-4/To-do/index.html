@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main-div">
+    <h1>To-do List</h1>
+
+    <div class="input-area">
+      <input id="input-box" type="search" placeholder="Write your task here">
+      
+        <div>
+          <input id="date-box" type="date" placeholder="" style="border:none;background:antiquewhite">
+
+        <button id="addBtn">
+          <span id="add-task-text">Add Task</span>
+          <span id="add-task-btn"> + </span>
+        </button>
+        </div>
+      
+    </div>
+
+    <h3 style="color: red;">Pending Tasks</h3>
+    <ul id="pendingList"></ul>
+
+    <h3 style="color: green;">Completed Tasks</h3>
+    <ul id="completedList"></ul>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

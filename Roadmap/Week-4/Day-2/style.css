@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: gray;
+    gap: 1 rem;
+}
+.div-1{
+    background-color: green;
+    flex: 1;
+    text-align: center;
+}
+.div-2{
+    flex: 4;
+    background-color: pink;
+}
+
+.div-1 li{
+    list-style-type: none;
+    padding: 10px;
+}
+.div-1 h2{
+    background-color: #fff;
+}
+
+.div-1, .div-2{
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}

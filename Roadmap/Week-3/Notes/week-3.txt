@@ -1,0 +1,39 @@
+Product card:
+
+I applied Props and state.
+i made reusable component product card,
+dynamically added product details from products object, and looped thru that using map function,
+I applied conditional rendering,
+useEffect for persistent UI, as it saves value of count to localstorage whenever there is change is count state,
+
+
+
+Created a todo list with reacgt with components like Container that bundles todo list
+and task that represents individual task list item in task list
+
+I chose floral theme for it and made it localStorage perisitent
+
+I added update toggle, delete task
+
+TO ADD :
+Edit task
+Error boundary
+form Validation
+
+
+
+
+Weather APP :
+API key :  79f7a637758c41f396d150217250405
+f940d35e87e845c69bc125521260701
+
+Fetch: 
+axios : axios.get(url), auto parse json
+
+BLOG APP:
+AIzaSyAaANtY5RbP4rltH9eJKzCTsGakQhjh-Og
+
+
+//why do we need res.json()
+//protected routes in react
+//other 

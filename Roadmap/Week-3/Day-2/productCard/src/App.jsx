@@ -112,6 +112,13 @@ function App() {
         ))
       }
       </div>
+
+      {/* <div className="sale">Sale Sale</div> */}
+      <div className="sale-wrapper">
+        <div className="sale">SALE SALE SALE SALE SALE</div>
+        <div className="sale-clone">SALE SALE SALE SALE SALE</div>
+      </div>
+
     </>
   );
 }

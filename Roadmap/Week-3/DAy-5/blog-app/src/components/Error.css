@@ -1,0 +1,11 @@
+.err-div{
+    color: red;
+    background-color: #ffdddd;
+    width: 60vw;
+    margin: auto;
+    padding: 20px;
+    border-radius: 2.5rem;
+    border: 1.5px solid salmon;
+    font-size: 1.5rem;
+    font-weight: 500;
+}

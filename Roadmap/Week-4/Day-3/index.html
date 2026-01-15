@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color</title>
+</head>
+<body>
+    <button id="click">Click Me to Change Background Color</button>
+    <br>
+    <br>
+    <button id="random">Random Background</button>
+
+    <script>
+        const button = document.getElementById("click");
+        const random = document.getElementById("random");
+
+        const colors = ["pink", "green", "sandybrown", "gainsboro", "navy"];
+
+        function changeBackgroundColor(){
+            //INITIAL CODE
+            // document.body.style.backgroundColor = "red";
+
+            //SWITCH BETWEEN RED and WHITE
+            if(document.body.style.backgroundColor === "red"){
+                document.body.style.backgroundColor = "white";
+            }
+            else{
+                document.body.style.backgroundColor = "red";
+            }
+        }
+        function changeRandomBackgroundColor(){ 
+            const color = colors[Math.floor(Math.random()*colors.length)];
+            
+            document.body.style.backgroundColor = `${color}`;
+        }
+        
+        button.addEventListener("click", changeBackgroundColor);
+        random.addEventListener("click", changeRandomBackgroundColor);
+    </script>
+</body>
+</html>
